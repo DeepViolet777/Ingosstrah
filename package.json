@@ -1,11 +1,15 @@
 {
   "name": "73",
+  "repository": "https://github.com/DeepViolet777/Ingosstrah",
   "version": "1.0.0",
   "description": "Landing",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "validate.js": "^0.13.1"
+  }
 }
