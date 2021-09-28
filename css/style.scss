@@ -237,8 +237,7 @@ img {
         &-field {
             width: 320px;
             height: 38px;
-            background: #FFFFFF;
-            border: 0.5px solid #909194;
+            border: 0.5px solid #FAFBFC;
             border-radius: 30px;
             font-weight: 400;
             font-size: 16px;
@@ -248,10 +247,11 @@ img {
             margin-bottom: 15px;
             outline: none;
             padding-left: 20px;
+            -webkit-box-shadow: inset 0 0 0 50px #ffffff;
 
             &:active,
             &:focus {
-                border: 0.5px solid #0047BB;
+                border: 0.5px solid $blue;
 
 
             }
@@ -261,8 +261,26 @@ img {
 
             }
 
+            
+
+        
         }
 
+      
+        
+        &-alert {
+            display: block;
+            opacity: 0;
+            color: #DF0000;
+            font-weight: 400;
+            font-size: 7px;
+            line-height: 142%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: -15px;
+            left: 20px;
+        }
 
 
         &-submit_btn {
@@ -282,6 +300,7 @@ img {
             color: #FFFFFF;
             border-width: 0;
             background: #0047BB;
+            outline: none;
 
 
             &:disabled {
@@ -440,6 +459,7 @@ img {
         width: 173px;
         height: 32px;
         margin: 15px auto 30px;
+
         &-item {
             width: 32px;
             height: 32px;

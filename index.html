@@ -47,12 +47,22 @@
                         С теми, кто дорожит своими достижениями
                     </span>
                     <form class="form-fields" method="post">
+                        .form-item
                         <input type="text" name="name" id="FIO" class="form-field" placeholder="Ф.И.О">
+                        <span class="form-alert">
+                            Проверьте поле на правильность заполения.
+                        </span>
                         <input type="tel" name="tel" id="Tel" class="form-field" placeholder="+7">
+                        <span class="form-alert">
+                            Проверьте поле на правильность заполения.
+                        </span>
                         <input type="email" name="email" id="email" class="form-field" placeholder="Email">
-                        <input type="submit" value="Забронировать" class="form-submit_btn submit_btn" disabled>
+                        <span class="form-alert">
+                            Проверьте поле на правильность заполения.
+                        </span>
+                        <input type="submit" value="Забронировать" class="form-submit_btn submit_btn">
                         <div class="form-personal">
-                            <input type="checkbox" name="personal-data_submit" id="personal-data_submit"
+                            <input type="checkbox" name="personal-data_submit" id="check_submit"
                                 class="form-personal_check">
                             <label for="personal-data_submit" class="form-personal_text">
                                 Подтверждаю согласие на обработку персональных 

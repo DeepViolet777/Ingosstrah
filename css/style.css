@@ -222,8 +222,7 @@ img {
 .content .form-field {
   width: 320px;
   height: 38px;
-  background: #FFFFFF;
-  border: 0.5px solid #909194;
+  border: 0.5px solid #FAFBFC;
   border-radius: 30px;
   font-weight: 400;
   font-size: 16px;
@@ -237,6 +236,7 @@ img {
   margin-bottom: 15px;
   outline: none;
   padding-left: 20px;
+  -webkit-box-shadow: inset 0 0 0 50px #ffffff;
 }
 
 .content .form-field:active, .content .form-field:focus {
@@ -257,6 +257,24 @@ img {
 
 .content .form-field::placeholder {
   color: #DCDCDC;
+}
+
+.content .form-alert {
+  display: block;
+  opacity: 0;
+  color: #DF0000;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 142%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -15px;
+  left: 20px;
 }
 
 .content .form-submit_btn {
@@ -282,6 +300,7 @@ img {
   color: #FFFFFF;
   border-width: 0;
   background: #0047BB;
+  outline: none;
 }
 
 .content .form-submit_btn:disabled {
