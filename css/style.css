@@ -207,7 +207,7 @@ img {
   margin-bottom: 20px;
 }
 
-.content .form-fields {
+.content .form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +216,22 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 20px auto;
-  padding-left: 65px;
+  padding-left: 60px;
+}
+
+.content .form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 320px;
+  height: 150px;
 }
 
 .content .form-field {
@@ -224,6 +239,7 @@ img {
   height: 38px;
   border: 0.5px solid #FAFBFC;
   border-radius: 30px;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 142%;
@@ -233,10 +249,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 15px;
   outline: none;
   padding-left: 20px;
   -webkit-box-shadow: inset 0 0 0 50px #ffffff;
+  box-shadow: inset 0 0 0 50px #ffffff;
 }
 
 .content .form-field:active, .content .form-field:focus {
@@ -277,6 +293,22 @@ img {
   left: 20px;
 }
 
+.content .form-item {
+  position: relative;
+}
+
+.content .form-check {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/check-icon.svg);
+  position: absolute;
+  top: 9px;
+  left: 270px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: 0;
+}
+
 .content .form-submit_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,7 +323,7 @@ img {
   width: 320px;
   height: 42px;
   border-radius: 30px;
-  margin-top: 5px;
+  margin-top: 15px;
   font-weight: normal;
   font-size: 16px;
   line-height: 142%;
@@ -445,6 +477,14 @@ img {
 
 .content .details-reserve_btn:hover {
   color: #DCDCDC;
+}
+
+.content .details .valid {
+  border: 0.5px solid #DCDCDC;
+}
+
+.content .details .invalid {
+  border: 0.5px solid #DF0000;
 }
 
 .footer {

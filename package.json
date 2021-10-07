@@ -1,15 +1,23 @@
 {
   "name": "73",
-  "repository": "https://github.com/DeepViolet777/Ingosstrah",
   "version": "1.0.0",
-  "description": "Landing",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepViolet777/Ingosstrah.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeepViolet777/Ingosstrah/issues"
+  },
+  "homepage": "https://github.com/DeepViolet777/Ingosstrah#readme",
   "dependencies": {
-    "validate.js": "^0.13.1"
+    "inputmask": "^5.0.6",
+    "just-validate": "^1.5.0"
   }
 }
