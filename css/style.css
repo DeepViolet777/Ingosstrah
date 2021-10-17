@@ -333,6 +333,8 @@ img {
   border-width: 0;
   background: #0047BB;
   outline: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .content .form-submit_btn:disabled {
