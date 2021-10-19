@@ -1,10 +1,14 @@
+//import validate from "./node_modules/validate.js";
+//var validate = require("validate.js");
+
+//const { validate } = require("./node_modules/validate.js");
 
 
 const submitBtn = document.querySelector('.submit_btn');
 
-const userName = document.getElementById('FIO');
+const userName = document.getElementById('fio');
 
-const tel = document.getElementById('Tel');
+const tel = document.getElementById('tel');
 
 const email = document.getElementById('email');
 
@@ -13,6 +17,8 @@ const field = document.querySelector('.form-field');
 const check = document.getElementById('check_submit');
 
 const formAlert = document.querySelector('.form-alert');
+
+const form = document.querySelector(".form-wrapper");
 
 
 const regName = /[яА-ЯёЁ]/;
@@ -87,11 +93,68 @@ submitBtn.onclick = function (e) {
 
     console.log(userName, tel, email);
 }*/
-check.onchange = function(){
-if (check.checked) {
-    submitBtn.disabled = false;
+check.onchange = function () {
+    if (check.checked) {
+        submitBtn.disabled = false;
 
-} else {
-    submitBtn.disabled = true;
+    } else {
+        submitBtn.disabled = true;
 
-}};
+    }
+};
+
+
+/*
+
+function validateForm(selector, rules) {
+    new JustValidate('.form-wrapper', {
+            rules: {
+                fio: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                tel: {
+                    required: true
+                }
+            },
+
+            submitHandler: function (form, values, ajax) {
+                console.log(form)
+            }
+
+        });
+
+    };
+
+    
+    field.onblur = function(){
+        validateForm();
+        
+    };
+    
+ /*   submitBtn.onclick = function (e) {
+        e.preventDefault();
+        validateForm();
+      //  console.log(form)
+    };*/
+
+    var constraints = {
+        name: {
+          presence: true
+         
+        },
+        tel: {
+         presence: true
+        },
+        email: {
+          presence: true,
+          email: true
+        
+        },
+      };
+
+      validate(form, constraints);
+      

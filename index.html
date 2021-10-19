@@ -49,21 +49,21 @@
                     <form class="form-wrapper" method="post" action="#">
                         <div class="form-fields">
                         <div class="form-item">
-                        <input type="text" name="name" id="FIO" class="form-field" placeholder="Ф.И.О" required autofocus>
+                        <input type="text" name="name" id="fio" class="form-field" placeholder="Ф.И.О" data-validate-field="fio" required autofocus>
                         <span class="form-alert">
                             Проверьте поле на правильность заполения.
                         </span>
                         <div class="form-check"></div>
                     </div>
                     <div class="form-item">
-                        <input type="tel" name="tel" id="Tel" class="form-field" placeholder="+7" required>
+                        <input type="tel" name="tel" id="tel" class="form-field" placeholder="+7"  data-validate-field="tel"  required>
                         <span class="form-alert">
                             Проверьте поле на правильность заполения.
                         </span>
                         <div class="form-check"></div>
                         </div>
                         <div class="form-item">
-                        <input type="email" name="email" id="email" class="form-field" placeholder="Email" required>
+                        <input type="email" name="email" id="email" class="form-field" placeholder="Email"  data-validate-field="email" required>
                         <span class="form-alert">
                             Проверьте поле на правильность заполения.
                         </span>
@@ -138,7 +138,7 @@
         </footer>
     </div>
     <script src="node_modules/inputmask/dist/inputmask.min.js"></script>
-    <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+    <script src="node_modules/validate.js/validate.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>
 
